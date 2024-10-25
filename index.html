@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trial</title>
+</head>
+<body>
+  <div>
+    <!-- 點擊按鈕後在新頁面顯示 PDF -->
+    <button onclick="openPDF(4)">catalog</button>
+  </div>
+
+  <script>
+    function openPDF(pageNumber) {
+      // 動態生成帶頁碼的 PDF URL
+      var pdfUrl = "https://demo.metalworking.com.tw/EVERMORE_2024-1017-App/assets/PDF/2024-%E6%97%A5%E7%B3%BB(%E5%8F%B0%E7%81%A3).pdf#page=" + pageNumber;
+      // 在新頁籤中打開 PDF 文件
+      window.open(pdfUrl, '_blank');
+    }
+  </script>
+</body>
+
+
+</html>
